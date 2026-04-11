@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundMask;
 
     bool isGrounded;
-    public float jump = 3;
+    public float jump = 1;
 
     void Update()
     {

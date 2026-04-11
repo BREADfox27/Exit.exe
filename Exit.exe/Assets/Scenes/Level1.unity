@@ -42310,7 +42310,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
-  jump: 3
+  jump: 1
 --- !u!1 &1559636863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b1382ad6bf15bc47bc9c603e0f43a21, type: 3}
