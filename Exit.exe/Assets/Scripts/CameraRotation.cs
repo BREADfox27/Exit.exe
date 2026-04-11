@@ -1,21 +1,31 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 
 
 public class CameraRotation : MonoBehaviour
 {
-    public float mouseSensitivity = 80f;
+    public Slider slider;
+    public float mouseSensitivity = 100f;
     public Transform player;
 
     float xRotation = 0f;
 
     void Start()
     {
+        mouseSensitivity = PlayerPrefs.GetFloat("currentSensitivity", 100);
+        slider.value = mouseSensitivity/10;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    void Update()
+    {
+        MouseRotation();
     }
 
     void MouseRotation()
     {
+        PlayerPrefs.SetFloat("currentSensitivity", mouseSensitivity);
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
@@ -26,9 +36,9 @@ public class CameraRotation : MonoBehaviour
         player.Rotate(Vector3.up * mouseX);
     }
 
-    void Update()
+    public void AdjustSpeed (float newSpeed)
     {
-        MouseRotation();
+        mouseSensitivity = newSpeed * 10;
     }
 }
 
