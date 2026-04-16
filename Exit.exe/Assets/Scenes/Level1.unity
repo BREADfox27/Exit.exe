@@ -38992,6 +38992,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   jump: 1
+  variableAI: {fileID: 1802079849}
 --- !u!1001 &1563476195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44881,7 +44882,6 @@ MonoBehaviour:
   - {fileID: 1617865137}
   distanceToFollowPath: 2
   followPlayer: 0
-  playerInRoom: 0
   distanceToFollow: 10
 --- !u!1001 &1805031297
 PrefabInstance:

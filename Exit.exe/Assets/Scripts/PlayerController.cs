@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     bool isGrounded;
     public float jump = 1;
 
+    public AI variableAI;
+
     void Update()
     {
         CharacterMovement();
@@ -47,6 +49,21 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jump * -2  * gravity);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("FollowPlayerTrigger"))
+        {
+            variableAI.followPlayer = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("FollowPlayerTrigger"))
+        {
+            variableAI.followPlayer = false;
         }
     }
 }

@@ -16,7 +16,6 @@ public class AI : MonoBehaviour
     public bool followPlayer = false;
     GameObject player;
     float distanceToPlayer;
-    public bool playerInRoom = false;
 
     public float distanceToFollow = 10;
     
@@ -26,22 +25,6 @@ public class AI : MonoBehaviour
         i = 0;
         navMeshAgent.destination = DestinationPoints[i].position;
         player = FindFirstObjectByType<PlayerController>().gameObject;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("FollowPlayerTrigger"))
-        {
-            followPlayer = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("FollowPlayerTrigger"))
-        {
-            followPlayer = false;
-        }
     }
 
     // Update is called once per frame
