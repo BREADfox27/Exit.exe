@@ -1,3 +1,5 @@
+using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -11,9 +13,10 @@ public class AI : MonoBehaviour
 
     int i = 0;
 
-    public bool followPlayer;
+    public bool followPlayer = false;
     GameObject player;
     float distanceToPlayer;
+    public bool playerInRoom = false;
 
     public float distanceToFollow = 10;
     
@@ -25,12 +28,28 @@ public class AI : MonoBehaviour
         player = FindFirstObjectByType<PlayerController>().gameObject;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("FollowPlayerTrigger"))
+        {
+            followPlayer = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("FollowPlayerTrigger"))
+        {
+            followPlayer = false;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
 
-        if (distanceToPlayer <= distanceToFollow && followPlayer)
+        if (distanceToPlayer <= distanceToFollow && followPlayer == true)
         {
             FollowPlayer();
         }

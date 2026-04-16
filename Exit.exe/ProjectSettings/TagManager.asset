@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - FollowPlayerTrigger
   layers:
   - Default
   - TransparentFX
@@ -12,6 +13,7 @@ TagManager:
   - Ground
   - Water
   - UI
+  - Ground_NotWalkeableEnemy
   - 
   - 
   - 
@@ -21,8 +23,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
