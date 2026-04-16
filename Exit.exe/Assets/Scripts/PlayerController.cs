@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -56,6 +57,11 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("FollowPlayerTrigger"))
         {
             variableAI.followPlayer = true;
+        }
+
+        if (other.CompareTag("Enemy"))
+        {
+            SceneManager.LoadScene("Lose");
         }
     }
 
