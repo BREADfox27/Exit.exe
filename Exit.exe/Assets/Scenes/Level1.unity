@@ -32,7 +32,7 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
@@ -93,8 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 26ee0a3fef9651640afb4757a69bef82, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 11121ce54cb91954d8ce8280e3506c4b, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -16953,6 +16953,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b1382ad6bf15bc47bc9c603e0f43a21, type: 3}
   m_PrefabInstance: {fileID: 690762726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &691266135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691266136}
+  m_Layer: 0
+  m_Name: Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &691266136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691266135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3033, y: -0, z: 11.85771}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2049815796}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &696900357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19106,8 +19138,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.8865185, y: 1.4555078, z: 10.540384}
-  m_Center: {x: -2.9432254, y: -0.6787186, z: 5.270192}
+  m_Size: {x: 5.8865185, y: 4.0393925, z: 10.540384}
+  m_Center: {x: -2.9432254, y: -1.9706609, z: 5.2701926}
 --- !u!4 &761305511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c3a2e9c7a879b7d41b29957e6f9ed6c0, type: 3}
@@ -24091,7 +24123,6 @@ Transform:
   - {fileID: 411035476}
   - {fileID: 883669580}
   - {fileID: 507773138}
-  - {fileID: 2049815796}
   m_Father: {fileID: 1983752970}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937133202 stripped
@@ -58219,11 +58250,11 @@ Transform:
   m_GameObject: {fileID: 2049815795}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.71, y: 3.1599998, z: -2.3092639e-14}
+  m_LocalPosition: {x: -1.3033, y: 4.16, z: -11.85771}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 936822439}
+  m_Father: {fileID: 691266136}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &2049815797
 MonoBehaviour:
@@ -58267,11 +58298,11 @@ Light:
   m_Color: {r: 1, g: 0.88812834, b: 0.6933962, a: 1}
   m_Intensity: 100
   m_Range: 6.01
-  m_SpotAngle: 104.87721
-  m_InnerSpotAngle: 60.140472
+  m_SpotAngle: 91.05367
+  m_InnerSpotAngle: 53.752064
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -58304,10 +58335,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -61112,3 +61143,4 @@ SceneRoots:
   - {fileID: 1880707256}
   - {fileID: 1852405521}
   - {fileID: 382098794}
+  - {fileID: 691266136}
