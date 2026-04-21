@@ -1589,7 +1589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &47162103
 Transform:
   m_ObjectHideFlags: 0
@@ -8187,9 +8187,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 489908694}
-  - {fileID: 1604147152}
-  - {fileID: 1597024078}
   - {fileID: 953381362}
+  - {fileID: 1597024078}
+  - {fileID: 1604147152}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
