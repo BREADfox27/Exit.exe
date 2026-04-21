@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CameraRotation : MonoBehaviour
 {
     public Slider slider;
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 50f;
     public Transform player;
 
     float xRotation = 0f;
