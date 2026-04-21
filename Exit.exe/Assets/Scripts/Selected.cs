@@ -1,25 +1,31 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Selected : MonoBehaviour
 {
     [Header("Raycast hit")]
-    public float rayDistance = 50f;
+    public float rayDistance = 2.5f;
     public LayerMask layermask;
 
     public GameObject interactiveText;
 
-    GameObject lastRecogniced;
+    public int keysCollected;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        keysCollected = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         Raycast();
+
+        if (keysCollected == 3)
+        {
+            SceneManager.LoadScene("Level2");
+        }
     }
 
     void Raycast()
@@ -41,6 +47,7 @@ public class Selected : MonoBehaviour
                 {
                     hit.collider.transform.GetComponent<Keys>().Deactivate();
                     interactiveText.SetActive(false);
+                    keysCollected++;
                 }
             }
         }
