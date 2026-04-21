@@ -5826,7 +5826,7 @@ GameObject:
   - component: {fileID: 222574450}
   - component: {fileID: 222574452}
   - component: {fileID: 222574451}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6242,7 +6242,7 @@ GameObject:
   - component: {fileID: 235124948}
   - component: {fileID: 235124950}
   - component: {fileID: 235124949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13261,7 +13261,7 @@ GameObject:
   - component: {fileID: 531279749}
   - component: {fileID: 531279751}
   - component: {fileID: 531279750}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40952,6 +40952,10 @@ PrefabInstance:
       value: Keys
       objectReference: {fileID: 0}
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_TagString
       value: Key
       objectReference: {fileID: 0}
@@ -42526,6 +42530,10 @@ PrefabInstance:
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_Name
       value: Keys (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_TagString
@@ -45124,7 +45132,7 @@ MonoBehaviour:
   rayDistance: 50
   layermask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 128
 --- !u!1001 &1560878015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46720,6 +46728,10 @@ PrefabInstance:
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_Name
       value: Keys (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_TagString

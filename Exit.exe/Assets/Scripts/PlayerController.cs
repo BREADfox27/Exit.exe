@@ -62,12 +62,20 @@ public class PlayerController : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 origin = transform.position;
-        Vector3 direction = transform.forward;
+        Vector3 direction = transform.TransformDirection(Vector3.forward);
 
         if (Physics.Raycast(origin, direction, out hit, rayDistance, layermask))
         {
             Debug.Log("We collided with: " + hit.collider.gameObject.name);
             Debug.DrawLine(origin, hit.point, Color.red);
+
+            if (hit.collider.tag == "KeyCode")
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    
+                }
+            }
         }
     }
 
