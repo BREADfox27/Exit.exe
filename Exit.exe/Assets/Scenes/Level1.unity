@@ -1589,7 +1589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &47162103
 Transform:
   m_ObjectHideFlags: 0
@@ -40951,6 +40951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keys
       objectReference: {fileID: 0}
+    - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
+      propertyPath: m_TagString
+      value: Key
+      objectReference: {fileID: 0}
     - target: {fileID: 3285831488360279271, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.913788
@@ -42522,6 +42526,10 @@ PrefabInstance:
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_Name
       value: Keys (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
+      propertyPath: m_TagString
+      value: Key
       objectReference: {fileID: 0}
     - target: {fileID: 3285831488360279271, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -45113,6 +45121,10 @@ MonoBehaviour:
     m_Bits: 8
   jump: 1
   variableAI: {fileID: 1802079849}
+  rayDistance: 50
+  layermask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1001 &1560878015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46708,6 +46720,10 @@ PrefabInstance:
     - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_Name
       value: Keys (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797385148917724765, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
+      propertyPath: m_TagString
+      value: Key
       objectReference: {fileID: 0}
     - target: {fileID: 3285831488360279271, guid: cbbc217ff57c7ee41b2fae4e6080e0b6, type: 3}
       propertyPath: m_LocalScale.x
