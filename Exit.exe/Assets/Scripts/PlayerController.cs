@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    
+                    hit.collider.gameObject.SetActive(false);
                 }
             }
         }
