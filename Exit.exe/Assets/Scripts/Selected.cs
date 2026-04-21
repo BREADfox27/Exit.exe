@@ -8,6 +8,8 @@ public class Selected : MonoBehaviour
 
     public GameObject interactiveText;
 
+    GameObject lastRecogniced;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,20 +31,17 @@ public class Selected : MonoBehaviour
         if (Physics.Raycast(origin, direction, out hit, rayDistance, layermask))
         {
             // Debug.Log("We collided with: " + hit.collider.gameObject.name);
-            Debug.DrawLine(origin, hit.point, Color.red);
+            // Debug.DrawLine(origin, hit.point, Color.red);
 
             if (hit.collider.tag == "Key")
             {
-                interactiveText.gameObject.SetActive(true);
+                interactiveText.SetActive(true);
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     hit.collider.transform.GetComponent<Keys>().Deactivate();
+                    interactiveText.SetActive(false);
                 }
-            }
-
-            else
-            {
-                interactiveText.gameObject.SetActive(false);
             }
         }
     }
