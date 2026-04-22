@@ -12,6 +12,13 @@ public class Selected : MonoBehaviour
     public PlayerController playerconVariable;
     public GameObject gun;
 
+    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
+
+    public int points = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -63,6 +70,51 @@ public class Selected : MonoBehaviour
                     hit.collider.transform.GetComponent<DeactivateGun>().Deactivate();
                     playerconVariable.speed = 0;
                     interactiveText.SetActive(false);
+                    enemy.gameObject.SetActive(true);
+                }
+            }
+
+            if (hit.collider.tag == "Enemy")
+            {
+                if (Input.GetMouseButtonDown(0) && points == 0)
+                {
+                    enemy.gameObject.SetActive(false);
+                    enemy1.gameObject.SetActive(true);
+                    points++;
+                }
+            }
+
+            if (hit.collider.tag == "Enemy1")
+            {
+                if (Input.GetMouseButtonDown(0) && points == 1)
+                {
+                    enemy1.gameObject.SetActive(false);
+                    enemy2.gameObject.SetActive(true);
+                    points++;
+                }
+            }
+
+            if (hit.collider.tag == "Enemy2")
+            {
+                if (Input.GetMouseButtonDown(0) && points == 2)
+                {
+                    enemy2.gameObject.SetActive(false);
+                    enemy3.gameObject.SetActive(true);
+                    points++;
+                }
+            }
+
+            if (hit.collider.tag == "Enemy3")
+            {
+                if (Input.GetMouseButtonDown(0) && points == 3)
+                {
+                    enemy3.gameObject.SetActive(false);
+                    points++;
+                }
+
+                if (points == 4)
+                {
+                    SceneManager.LoadScene("Win");
                 }
             }
         }
