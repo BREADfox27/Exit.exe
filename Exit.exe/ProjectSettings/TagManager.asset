@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - FollowPlayerTrigger
   - Key
+  - Gun
   layers:
   - Default
   - TransparentFX

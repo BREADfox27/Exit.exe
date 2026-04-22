@@ -8,13 +8,15 @@ public class Selected : MonoBehaviour
     public LayerMask layermask;
 
     public GameObject interactiveText;
-
     public int keysCollected;
+    public PlayerController playerconVariable;
+    public GameObject gun;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         keysCollected = 0;
+        gun.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,6 +50,19 @@ public class Selected : MonoBehaviour
                     hit.collider.transform.GetComponent<Keys>().Deactivate();
                     interactiveText.SetActive(false);
                     keysCollected++;
+                }
+            }
+
+            if (hit.collider.tag == "Gun")
+            {
+                interactiveText.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    gun.gameObject.SetActive(true);
+                    hit.collider.transform.GetComponent<DeactivateGun>().Deactivate();
+                    playerconVariable.speed = 0;
+                    interactiveText.SetActive(false);
                 }
             }
         }

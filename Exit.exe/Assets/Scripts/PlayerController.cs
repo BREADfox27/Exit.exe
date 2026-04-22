@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     public float jump = 1;
 
     public AI variableAI;
+    public AI variableAI1;
+    public AI variableAI2;
+    public AI variableAI3;
 
     void Update()
     {
@@ -59,6 +62,9 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("FollowPlayerTrigger"))
         {
             variableAI.followPlayer = true;
+            variableAI1.followPlayer = true;
+            variableAI2.followPlayer = true;
+            variableAI3.followPlayer = true;
         }
 
         if (other.CompareTag("Enemy"))
@@ -72,6 +78,9 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("FollowPlayerTrigger"))
         {
             variableAI.followPlayer = false;
+            variableAI1.followPlayer = false;
+            variableAI2.followPlayer = false;
+            variableAI3.followPlayer = false;
         }
     }
 }
