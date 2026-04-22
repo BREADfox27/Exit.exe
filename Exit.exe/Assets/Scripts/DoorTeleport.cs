@@ -21,6 +21,8 @@ public class DoorTeleport : MonoBehaviour
     private bool hasTeleported = false;
     private bool isTransitioning = false;
 
+    public GameObject doorCollider;
+
     void Start()
     {
         if (interactionText != null)
@@ -33,6 +35,8 @@ public class DoorTeleport : MonoBehaviour
             fadePanel.color = c;
             fadePanel.gameObject.SetActive(true);
         }
+
+        doorCollider.gameObject.SetActive(true);
     }
 
     void Update()
@@ -101,6 +105,7 @@ public class DoorTeleport : MonoBehaviour
 
         // Desactivar la puerta para que no pueda volver a usarla
         gameObject.SetActive(false);
+        doorCollider.gameObject.SetActive(false);
     }
 
     IEnumerator Fade(float startAlpha, float endAlpha)

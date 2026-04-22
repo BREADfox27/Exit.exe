@@ -14190,6 +14190,7 @@ MonoBehaviour:
   teleportPoint: {fileID: 1613607460}
   interactKey: 112
   fadeDuration: 1
+  doorCollider: {fileID: 682078518}
 --- !u!65 &492601557
 BoxCollider:
   m_ObjectHideFlags: 0
