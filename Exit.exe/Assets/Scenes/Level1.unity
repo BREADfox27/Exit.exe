@@ -1347,10 +1347,10 @@ RectTransform:
   - {fileID: 2001572271}
   m_Father: {fileID: 1234479524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.43100002, y: 0.47862968}
-  m_AnchorMax: {x: 0.587271, y: 0.544}
-  m_AnchoredPosition: {x: 4.5, y: -1}
-  m_SizeDelta: {x: 1.0001221, y: -10}
+  m_AnchorMin: {x: 0.43100002, y: 0.5737778}
+  m_AnchorMax: {x: 0.587271, y: 0.6253333}
+  m_AnchoredPosition: {x: 4.5, y: -2}
+  m_SizeDelta: {x: 1.0001221, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &43017155
 MonoBehaviour:
@@ -54449,10 +54449,10 @@ RectTransform:
   - {fileID: 2051576729}
   m_Father: {fileID: 1234479524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.43100002, y: 0.55700004}
-  m_AnchorMax: {x: 0.587271, y: 0.60400003}
-  m_AnchoredPosition: {x: 4, y: 1}
-  m_SizeDelta: {x: 0.00012207031, y: 10}
+  m_AnchorMin: {x: 0.43100002, y: 0.64014816}
+  m_AnchorMax: {x: 0.587271, y: 0.6974074}
+  m_AnchoredPosition: {x: 4, y: -0.5}
+  m_SizeDelta: {x: 0.00012207031, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806241098
 MonoBehaviour:
@@ -56561,7 +56561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b3c8d6ba4655e642be229cb39a31370, type: 2}
   m_sharedMaterial: {fileID: -5995770360271684702, guid: 6b3c8d6ba4655e642be229cb39a31370, type: 2}
@@ -57060,10 +57060,10 @@ RectTransform:
   - {fileID: 1886527859}
   m_Father: {fileID: 1234479524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.43100002, y: 0.4072963}
-  m_AnchorMax: {x: 0.59152085, y: 0.46562967}
-  m_AnchoredPosition: {x: 0.5, y: 0}
-  m_SizeDelta: {x: -6.999878, y: -2}
+  m_AnchorMin: {x: 0.43100002, y: 0.5}
+  m_AnchorMax: {x: 0.587271, y: 0.54955554}
+  m_AnchoredPosition: {x: 4.5, y: -1}
+  m_SizeDelta: {x: 1.0001221, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904069336
 MonoBehaviour:
@@ -60203,7 +60203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: OPTIONS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b3c8d6ba4655e642be229cb39a31370, type: 2}
   m_sharedMaterial: {fileID: -5995770360271684702, guid: 6b3c8d6ba4655e642be229cb39a31370, type: 2}
@@ -61702,7 +61702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main menu
+  m_text: MAIN MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b3c8d6ba4655e642be229cb39a31370, type: 2}
   m_sharedMaterial: {fileID: -5995770360271684702, guid: 6b3c8d6ba4655e642be229cb39a31370, type: 2}
