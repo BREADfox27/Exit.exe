@@ -1,16 +1,29 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Pause : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject optionsmenu;
+    public GameObject escIcon;
+
+    public void Mainmenu()
     {
-        
+        SceneManager.LoadScene("MainMenu");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Options()
     {
-        
+        optionsmenu.SetActive(true);
+    }
+
+    public void Return()
+    {
+        optionsmenu.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
