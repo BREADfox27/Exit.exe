@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DeactivateGun : MonoBehaviour
+public class DeactivateScript : MonoBehaviour
 {
     public void Deactivate()
     {

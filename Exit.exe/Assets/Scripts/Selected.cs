@@ -11,6 +11,7 @@ public class Selected : MonoBehaviour
     public int keysCollected;
     public PlayerController playerconVariable;
     public GameObject gun;
+    public GameObject playerLight;
 
     public GameObject enemy;
     public GameObject enemy1;
@@ -54,7 +55,7 @@ public class Selected : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    hit.collider.transform.GetComponent<Keys>().Deactivate();
+                    hit.collider.transform.GetComponent<DeactivateScript>().Deactivate();
                     interactiveText.SetActive(false);
                     keysCollected++;
                 }
@@ -67,10 +68,22 @@ public class Selected : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     gun.gameObject.SetActive(true);
-                    hit.collider.transform.GetComponent<DeactivateGun>().Deactivate();
+                    hit.collider.transform.GetComponent<DeactivateScript>().Deactivate();
                     playerconVariable.speed = 0;
                     interactiveText.SetActive(false);
                     enemy.gameObject.SetActive(true);
+                }
+            }
+
+            if (hit.collider.tag == "Light")
+            {
+                interactiveText.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    playerLight.gameObject.SetActive(true);
+                    hit.collider.transform.GetComponent<DeactivateScript>().Deactivate();
+                    interactiveText.SetActive(false);
                 }
             }
 
