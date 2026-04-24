@@ -18,6 +18,8 @@ public class Selected : MonoBehaviour
     public GameObject enemy2;
     public GameObject enemy3;
 
+    public GameObject shootText;
+
     public int points = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +27,7 @@ public class Selected : MonoBehaviour
     {
         keysCollected = 0;
         gun.gameObject.SetActive(false);
+        shootText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -71,6 +74,7 @@ public class Selected : MonoBehaviour
                     hit.collider.transform.GetComponent<DeactivateScript>().Deactivate();
                     playerconVariable.speed = 0;
                     interactiveText.SetActive(false);
+                    shootText.gameObject.SetActive(true);
                     enemy.gameObject.SetActive(true);
                 }
             }
