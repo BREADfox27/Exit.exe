@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 1d7503c5530f1a34a8cf44164f7bf035, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 11121ce54cb91954d8ce8280e3506c4b, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: b66d0276dedbefe4fb104f579b56d1a5, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -27167,7 +27167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27205,6 +27205,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6733177361254619370, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -27217,9 +27229,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: ac5773c8138ff534d9e9ecd9ae3d6a45, type: 2}
+    - target: {fileID: -516098083770646512, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1129496810705857465, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -27233,6 +27253,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: ac5773c8138ff534d9e9ecd9ae3d6a45, type: 2}
+    - target: {fileID: 8513859187771203891, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700725330082129686, guid: eae31113f4e4c4d4da5eb7b74441055a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
